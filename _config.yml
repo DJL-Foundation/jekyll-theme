@@ -1,5 +1,110 @@
+# Site settings
 title: "DJL Foundation Jekyll Theme"
-description: ""
+description: "A modern, accessible Jekyll theme for DJL Foundation sites with built-in components, dark mode support, and comprehensive documentation."
+author: "DJL Foundation"
+email: "design@djl.foundation"
 encoding: utf-8
 
-exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
+# URLs
+url: "https://jekyll.design.djl.foundation"
+baseurl: ""
+
+# Social links
+github_username: djl-foundation
+twitter_username: djlfoundation
+
+# SEO settings
+keywords: "jekyll, theme, DJL, machine learning, AI, deep learning, open source"
+logo: "/assets/images/djl-logo.svg"
+
+# Navigation
+navigation:
+  - name: "Home"
+    url: "/"
+  - name: "Getting Started"
+    url: "/getting-started"
+  - name: "Components"
+    url: "/components"
+  - name: "Typography"
+    url: "/typography"
+  - name: "Colors"
+    url: "/colors"
+  - name: "Layouts"
+    url: "/layouts"
+  - name: "Customization"
+    url: "/customization"
+  - name: "Download"
+    url: "/download"
+
+# Theme information
+theme_info:
+  version: "1.0.0"
+  repository: "https://github.com/djl-foundation/jekyll-theme"
+  license: "MIT"
+  support_email: "design@djl.foundation"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Feed settings
+feed:
+  posts_limit: 20
+
+# SEO tag settings
+twitter:
+  username: djlfoundation
+  card: summary_large_image
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE
+  - "*.gem"
+  - "*.gemspec"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - .git/
+  - .github/
+
+# Collections
+collections:
+  examples:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      author: "DJL Foundation"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "default"
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed

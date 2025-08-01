@@ -1,6 +1,12 @@
-<html>
+<html lang="en">
   {% include head.html %}
-  <body>
-    {{ content }}
+  <body class="page-transition">
+    {% include header.html %}
+    
+    <main class="main-content animate-fade-in">
+      {{ content }}
+    </main>
+    
+    {% include footer.html %}
   </body>
 </html>
