@@ -1,5 +1,6 @@
 ---
 title: "DJL Foundation Jekyll Theme"
+layout: default
 ---
 
 # DJL Foundation Jekyll Theme
