@@ -1,0 +1,9 @@
+body {
+  --background: hsl(230, 60%, 96%);
+  --foreground: hsl(231, 87%, 9%);
+  background-color: var(--background);
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 70ch;
+  color: var(--foreground);
+}
